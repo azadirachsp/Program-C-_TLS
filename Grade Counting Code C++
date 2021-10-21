@@ -1,0 +1,55 @@
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int i, siswa;
+    float nilai, sum=0, average;
+    
+    cout<<"Masukkan jumlah siswa: ";
+    cin>>siswa;
+    
+    for(i=1 ; i<=siswa ; i++) {
+        cout<<"\nMasukkan nilai siswa ke-"<<i<<": ";
+        cin>>nilai;
+        if(nilai>3.75 && nilai<=4.00)
+            cout<<"Nilai siswa ke-"<<i<<": A";
+        else if(nilai>3.50 && nilai<=3.75)
+            cout<<"Nilai siswa ke-"<<i<<": A-";
+        else if(nilai>3.25 && nilai<=3.50)
+            cout<<"Nilai siswa ke-"<<i<<": A/B";
+        else if(nilai>3.00 && nilai<=3.25)
+            cout<<"Nilai siswa ke-"<<i<<": B+";
+        else if(nilai>2.75 && nilai<=3.00)
+            cout<<"Nilai siswa ke-"<<i<<": B";
+        else if(nilai>2.50 && nilai<=2.75)
+            cout<<"Nilai siswa ke-"<<i<<": B-";
+        else if(nilai>2.25 && nilai<=2.50)
+            cout<<"Nilai siswa ke-"<<i<<": B/C";
+        else if(nilai>2.00 && nilai<=2.25)
+            cout<<"Nilai siswa ke-"<<i<<": C+";
+        else if(nilai>1.75 && nilai<=2.00)
+            cout<<"Nilai siswa ke-"<<i<<": C";
+        else if(nilai>1.50 && nilai<=1.75)
+            cout<<"Nilai siswa ke-"<<i<<": C-";
+        else if(nilai>1.25 && nilai<=1.50)
+            cout<<"Nilai siswa ke-"<<i<<": C/D";
+        else if(nilai>1.00 && nilai<=1.25)
+            cout<<"Nilai siswa ke-"<<i<<": D+";
+        else if(nilai>0.00 && nilai<=1.00)
+            cout<<"Nilai siswa ke-"<<i<<": D";
+        else if(nilai=0.00)
+            cout<<"Nilai siswa ke-"<<i<<": E";
+        else
+            cout<<"Nilai invalid";
+        cout<<"\n";
+            
+        sum = sum+nilai;
+    }
+
+    average = sum/siswa;
+    cout<<"\nRata-rata nilai: "<<average;
+    
+    return 0;
+}
