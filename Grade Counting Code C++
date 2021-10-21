@@ -13,6 +13,7 @@ int main()
     for(i=1 ; i<=siswa ; i++) {
         cout<<"\nMasukkan nilai siswa ke-"<<i<<": ";
         cin>>nilai;
+        
         if(nilai>3.75 && nilai<=4.00)
             cout<<"Nilai siswa ke-"<<i<<": A";
         else if(nilai>3.50 && nilai<=3.75)
