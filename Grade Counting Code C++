@@ -40,33 +40,33 @@ int main()
         cout<<"------------------------------------------\nSISWA KE-"<<i<<endl;
         
         if(nilai[i]>3.75 && nilai[i]<=4.00) 
-            cout<<"Nama\t: "<<nama[i]<<"\nNIU\t: "<<niu[i]<<"\nNilai\t: A"<<endl;
+            cout<<"Nama\t: "<<nama[i]<<"\nNIU\t: "<<niu[i]<<"\nNilai\t: "<<nilai[i]<<" (A)"<<endl;
         else if(nilai[i]>3.50 && nilai[i]<=3.75)
-            cout<<"Nama\t: "<<nama[i]<<"\nNIU\t: "<<niu[i]<<"\nNilai\t: A-"<<endl;
+            cout<<"Nama\t: "<<nama[i]<<"\nNIU\t: "<<niu[i]<<"\nNilai\t: "<<nilai[i]<<" (A-)"<<endl;
         else if(nilai[i]>3.25 && nilai[i]<=3.50)
-            cout<<"Nama\t: "<<nama[i]<<"\nNIU\t: "<<niu[i]<<"\nNilai\t: A/B"<<endl;
+            cout<<"Nama\t: "<<nama[i]<<"\nNIU\t: "<<niu[i]<<"\nNilai\t: "<<nilai[i]<<" (A/B)"<<endl;
         else if(nilai[i]>3.00 && nilai[i]<=3.25)
-            cout<<"Nama\t: "<<nama[i]<<"\nNIU\t: "<<niu[i]<<"\nNilai\t: B+"<<endl;
+            cout<<"Nama\t: "<<nama[i]<<"\nNIU\t: "<<niu[i]<<"\nNilai\t: "<<nilai[i]<<" (B+)"<<endl;
         else if(nilai[i]>2.75 && nilai[i]<=3.00)
-            cout<<"Nama\t: "<<nama[i]<<"\nNIU\t: "<<niu[i]<<"\nNilai\t: B"<<endl;
+            cout<<"Nama\t: "<<nama[i]<<"\nNIU\t: "<<niu[i]<<"\nNilai\t: "<<nilai[i]<<" (B)"<<endl;
         else if(nilai[i]>2.50 && nilai[i]<=2.75)
-            cout<<"Nama\t: "<<nama[i]<<"\nNIU\t: "<<niu[i]<<"\nNilai\t: B-"<<endl;
+            cout<<"Nama\t: "<<nama[i]<<"\nNIU\t: "<<niu[i]<<"\nNilai\t: "<<nilai[i]<<" (B-)"<<endl;
         else if(nilai[i]>2.25 && nilai[i]<=2.50)
-            cout<<"Nama\t: "<<nama[i]<<"\nNIU\t: "<<niu[i]<<"\nNilai\t: B/C"<<endl;
+            cout<<"Nama\t: "<<nama[i]<<"\nNIU\t: "<<niu[i]<<"\nNilai\t: "<<nilai[i]<<" (B/C)"<<endl;
         else if(nilai[i]>2.00 && nilai[i]<=2.25)
-            cout<<"Nama\t: "<<nama[i]<<"\nNIU\t: "<<niu[i]<<"\nNilai\t: C+"<<endl;
+            cout<<"Nama\t: "<<nama[i]<<"\nNIU\t: "<<niu[i]<<"\nNilai\t: "<<nilai[i]<<" (C+)"<<endl;
         else if(nilai[i]>1.75 && nilai[i]<=2.00)
-            cout<<"Nama\t: "<<nama[i]<<"\nNIU\t: "<<niu[i]<<"\nNilai\t: C"<<endl;
+            cout<<"Nama\t: "<<nama[i]<<"\nNIU\t: "<<niu[i]<<"\nNilai\t: "<<nilai[i]<<" (C)"<<endl;
         else if(nilai[i]>1.50 && nilai[i]<=1.75)
-            cout<<"Nama\t: "<<nama[i]<<"\nNIU\t: "<<niu[i]<<"\nNilai\t: C-"<<endl;
+            cout<<"Nama\t: "<<nama[i]<<"\nNIU\t: "<<niu[i]<<"\nNilai\t: "<<nilai[i]<<" (C-)"<<endl;
         else if(nilai[i]>1.25 && nilai[i]<=1.50)
-            cout<<"Nama\t: "<<nama[i]<<"\nNIU\t: "<<niu[i]<<"\nNilai\t: C/D"<<endl;
+            cout<<"Nama\t: "<<nama[i]<<"\nNIU\t: "<<niu[i]<<"\nNilai\t: "<<nilai[i]<<" (C/D)"<<endl;
         else if(nilai[i]>1.00 && nilai[i]<=1.25)
-            cout<<"Nama\t: "<<nama[i]<<"\nNIU\t: "<<niu[i]<<"\nNilai\t: D+"<<endl;
+            cout<<"Nama\t: "<<nama[i]<<"\nNIU\t: "<<niu[i]<<"\nNilai\t: "<<nilai[i]<<" (D+)"<<endl;
         else if(nilai[i]>0.00 && nilai[i]<=1.00)
-            cout<<"Nama\t: "<<nama[i]<<"\nNIU\t: "<<niu[i]<<"\nNilai\t: D"<<endl;
+            cout<<"Nama\t: "<<nama[i]<<"\nNIU\t: "<<niu[i]<<"\nNilai\t: "<<nilai<<" (D)"<<endl;
         else if(nilai[i]=0.00)
-            cout<<"Nama\t: "<<nama[i]<<"\nNIU\t: "<<niu[i]<<"\nNilai\t: E"<<endl;
+            cout<<"Nama\t: "<<nama[i]<<"\nNIU\t: "<<niu[i]<<"\nNilai\t: "<<nilai<<" (E)"<<endl;
         else
             cout<<"Nilai invalid"<<endl;
     }
