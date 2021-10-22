@@ -4,53 +4,66 @@ using namespace std;
 
 int main()
 {
-    int i, siswa;
-    float nilai, sum=0, average;
+    char nama[50];
+    int i, siswa, niu;
+    float tugas, uts, uas, nilai, sum=0, average;
     
     cout<<"Masukkan jumlah siswa: ";
     cin>>siswa;
     
     for(i=1 ; i<=siswa ; i++) {
-        cout<<"\nMasukkan nilai siswa ke-"<<i<<": ";
-        cin>>nilai;
+        cout<<"\n------------------------------------------\nSISWA KE-"<<i<<endl;
+        cout<<"\nMasukkan nama siswa\t: ";
+        cin>>nama;
+        cout<<"Masukkan NIU siswa\t: ";
+        cin>>niu;
+        cout<<"Masukkan nilai tugas\t: ";
+        cin>>tugas;
+        cout<<"Masukkan nilai UTS\t: ";
+        cin>>uts;
+        cout<<"Masukkan nilai UAS\t: ";
+        cin>>uas;
         
-        if(nilai>3.75 && nilai<=4.00)
-            cout<<"Nilai siswa ke-"<<i<<": A";
-        else if(nilai>3.50 && nilai<=3.75)
-            cout<<"Nilai siswa ke-"<<i<<": A-";
-        else if(nilai>3.25 && nilai<=3.50)
-            cout<<"Nilai siswa ke-"<<i<<": A/B";
-        else if(nilai>3.00 && nilai<=3.25)
-            cout<<"Nilai siswa ke-"<<i<<": B+";
-        else if(nilai>2.75 && nilai<=3.00)
-            cout<<"Nilai siswa ke-"<<i<<": B";
-        else if(nilai>2.50 && nilai<=2.75)
-            cout<<"Nilai siswa ke-"<<i<<": B-";
-        else if(nilai>2.25 && nilai<=2.50)
-            cout<<"Nilai siswa ke-"<<i<<": B/C";
-        else if(nilai>2.00 && nilai<=2.25)
-            cout<<"Nilai siswa ke-"<<i<<": C+";
-        else if(nilai>1.75 && nilai<=2.00)
-            cout<<"Nilai siswa ke-"<<i<<": C";
-        else if(nilai>1.50 && nilai<=1.75)
-            cout<<"Nilai siswa ke-"<<i<<": C-";
-        else if(nilai>1.25 && nilai<=1.50)
-            cout<<"Nilai siswa ke-"<<i<<": C/D";
-        else if(nilai>1.00 && nilai<=1.25)
-            cout<<"Nilai siswa ke-"<<i<<": D+";
-        else if(nilai>0.00 && nilai<=1.00)
-            cout<<"Nilai siswa ke-"<<i<<": D";
-        else if(nilai=0.00)
-            cout<<"Nilai siswa ke-"<<i<<": E";
-        else
-            cout<<"Nilai invalid";
+        nilai = (0.25*tugas)+(0.35*uts)+(0.4*uas);
+        
         cout<<"\n";
-            
+        
+        if(nilai>3.75 && nilai<=4.00) 
+            cout<<"Nama\t: "<<nama<<"\nNIU\t: "<<niu<<"\nNilai\t: A"<<endl;
+        else if(nilai>3.50 && nilai<=3.75)
+            cout<<"Nama\t: "<<nama<<"\nNIU\t: "<<niu<<"\nNilai\t: A-"<<endl;
+        else if(nilai>3.25 && nilai<=3.50)
+            cout<<"Nama\t: "<<nama<<"\nNIU\t: "<<niu<<"\nNilai\t: A/B"<<endl;
+        else if(nilai>3.00 && nilai<=3.25)
+            cout<<"Nama\t: "<<nama<<"\nNIU\t: "<<niu<<"\nNilai\t: B+"<<endl;
+        else if(nilai>2.75 && nilai<=3.00)
+            cout<<"Nama\t: "<<nama<<"\nNIU\t: "<<niu<<"\nNilai\t: B"<<endl;
+        else if(nilai>2.50 && nilai<=2.75)
+            cout<<"Nama\t: "<<nama<<"\nNIU\t: "<<niu<<"\nNilai\t: B-"<<endl;
+        else if(nilai>2.25 && nilai<=2.50)
+            cout<<"Nama\t: "<<nama<<"\nNIU\t: "<<niu<<"\nNilai\t: B/C"<<endl;
+        else if(nilai>2.00 && nilai<=2.25)
+            cout<<"Nama\t: "<<nama<<"\nNIU\t: "<<niu<<"\nNilai\t: C+"<<endl;
+        else if(nilai>1.75 && nilai<=2.00)
+            cout<<"Nama\t: "<<nama<<"\nNIU\t: "<<niu<<"\nNilai\t: C"<<endl;
+        else if(nilai>1.50 && nilai<=1.75)
+            cout<<"Nama\t: "<<nama<<"\nNIU\t: "<<niu<<"\nNilai\t: C-"<<endl;
+        else if(nilai>1.25 && nilai<=1.50)
+            cout<<"Nama\t: "<<nama<<"\nNIU\t: "<<niu<<"\nNilai\t: C/D"<<endl;
+        else if(nilai>1.00 && nilai<=1.25)
+            cout<<"Nama\t: "<<nama<<"\nNIU\t: "<<niu<<"\nNilai\t: D+"<<endl;
+        else if(nilai>0.00 && nilai<=1.00)
+            cout<<"Nama\t: "<<nama<<"\nNIU\t: "<<niu<<"\nNilai\t: D"<<endl;
+        else if(nilai=0.00)
+            cout<<"Nama\t: "<<nama<<"\nNIU\t: "<<niu<<"\nNilai\t: E"<<endl;
+        else
+            cout<<"Nilai invalid"<<endl;
+        
         sum = sum+nilai;
     }
-
+    
     average = sum/siswa;
-    cout<<"\nRata-rata nilai: "<<average;
+    cout<<"\nRata-rata: "<<average;
     
     return 0;
 }
